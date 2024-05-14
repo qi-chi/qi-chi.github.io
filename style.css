@@ -1,0 +1,217 @@
+body {
+  background-color: rgb(180, 80, 50);
+}
+.menu {
+  display: none;
+}
+h1 {
+  position: relative;
+  left: 120px;
+  top: 0;
+  line-height: 40px;
+}
+h2 {
+  height: 50px;
+  display: flex;
+  flex-direction: column; /*水平置中*/
+  align-items: center; /*中央水平置中*/
+  justify-content: center; /*垂直置中*/
+}
+h3 {
+  color: rgb(30, 60, 90);
+}
+p {
+  color: hsl(50, 80%, 90%);
+}
+
+* {
+  /* 内边距 padding:30 px 0 20px 50px；(上右下左) padding:30px 20px 50px;(上 左右 下) padding:30px 50px；(上下 左右) 一个值就是四边*/
+  padding: 0;
+  /* 外边距 同上 */
+  margin: 0;
+}
+
+section,
+footer {
+  background-color: rgb(157, 41, 51);
+  /* solid直线 dashed虚线 dotted圆点 */
+  border: 3px hsl(50, 80%, 90%) dashed;
+}
+
+header {
+  background-color: rgba(250, 230, 180, 0.8);
+  height: 80px;
+  width: 100%;
+  /*position 有相对relative和绝对absolute 两种定位模式*/
+  position: fixed; /*固定*/
+}
+
+/* 对header里的<a>标签操作 */
+header a {
+  color: rgb(9, 66, 80);
+  text-decoration: none; /*去掉下划线*/
+}
+/*游标移到其上下划线再次出现*/
+header a:hover {
+  text-decoration: underline;
+}
+header li {
+  display: inline; /*转为行内元素*/
+  margin-right: 4vw; /*加大每个按钮的右边距*/
+  /*4vw:视窗宽度的4%，相对单位*/
+}
+header ul {
+  position: absolute;
+  right: 2vw; /*距离页首右边缘5vw*/
+  top: 0;
+  line-height: 80px; /*调整文字行距*/
+}
+
+.one {
+  background-image: url("move1.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*弹性盒子*/
+  display: flex;
+  flex-direction: column; /*水平置中*/
+  align-items: center; /*中央水平置中*/
+  justify-content: center; /*垂直置中*/
+}
+.one p {
+  color: rgb(90, 100, 200);
+  height: 6vh;
+  font-size: 20px;
+  margin: 3px 0;
+  margin-top: 90px;
+}
+.one a {
+  color: rgb(90, 100, 200);
+  text-decoration: none;
+  border: 2px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.two1 {
+  display: flex;
+}
+.two1 img {
+  width: 20%;
+}
+.on {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  line-height: 2em;
+}
+.two2 {
+  display: flex;
+  height: 250px;
+}
+.under {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.two2 img {
+  width: 20%;
+}
+.two2 a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.three {
+  padding: 15px;
+}
+.four {
+  padding: 100 px;
+}
+.five {
+  background-image: url("pic1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  /*弹性盒子*/
+  display: flex;
+  flex-direction: column; /*水平置中*/
+  align-items: center;
+}
+.five p {
+  color: rgba(20, 100, 66, 0.5);
+  height: 15vh;
+  font-size: 22px;
+  margin-top: 0;
+}
+.five input,
+.five button {
+  background-color: transparent; /*透明beijing*/
+  color: black;
+  /*外边框*/
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+.five input {
+  width: 200px;
+  margin-right: 15px;
+}
+input::placeholder {
+  color: black; /*加深input字体*/
+}
+input:focus {
+  outline: none;
+  border-color: black; /*去掉点击时出现的边框+换颜色*/
+}
+.five button {
+  width: 80px;
+  cursor: pointer; /*手指形状*/
+}
+
+/* 响应式设计的CSS语法 */
+@media screen and (max-width: 768px) {
+  header ul {
+    display: none;
+  }
+  .one p {
+    font-size: 15px; /*调整文字大小*/
+  }
+  .menu {
+    display: block;
+    background-color: transparent; /*背景透明*/
+    color: black;
+    font-size: 35px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .one {
+    height: 60vw;
+  }
+  .one p {
+    padding: 0;
+    margin-top: 0px;
+  }
+  .two1 {
+    height: 160px;
+  }
+  .two2 {
+    height: 350px;
+  }
+  .two2 img {
+    padding-top: 15px;
+    height: 70%;
+  }
+  .five {
+    height: 15vh;
+  }
+}
