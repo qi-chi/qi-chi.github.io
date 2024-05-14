@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+    padding:0;
+    margin:0;
+ }
+body {
+    font-family: "宋体";
+    font-size: 14px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.row li {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.row li:hover {
+    cursor: pointer;
+}
+
+.mask {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(254, 189, 227);
+    color: brown;
+    transition: all .5s ease-out;
+}
+.row li:hover .mask {
+    top: 0;
+}
+.low {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    padding: 20px;
+}
+.low li {
+    list-style: none;
+}
+.low .img-text-container {
+    text-align: center;
+}
+.low img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+.low p {
+    color: #76043d; 
+    margin-top: 10px; 
+}
+
+.movie-row {
+    display: flex;
+    align-items: center;
+    width: 45%; 
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+}
+.movie-poster {
+    width: 150px;
+    height: 200px;
+    margin-right: 30px;
+    object-fit: cover;
+}
+</style>
+</head>
+
+<body>
+    <img src="拼图.jpg" style="width: 100%;height: 150px;" alt="">
+    <div style="height: 20px;"></div>
+    <h1 style="color: #ff0988; padding:10px;border:5px solid #d30a0a;border-radius:  5px;font-size: 50px;"><strong>母亲节赠送的花</strong></h1>
+    <div style="height: 20px;"></div>
+    <h2 style="color: #ea4899;" >“鲜花是一种浪漫的选择，带一束花去见想见的人”</h2>
+    <div style="height: 30px;"></div>
+<ul class="row">
+        <li>
+            <img src="玫瑰花.jpg"width="100%" height="100%"alt="" >
+            <div class="mask">
+            <h4>玫瑰花</h4>
+            <p>玫瑰不是情人的专属，也可以送给妈妈，
+                因为玫瑰的花语是勇敢的爱，寓意着对母亲深深的敬意和无尽的爱意。
+                </p>
+            </div>
+        </li>
+        <li>
+            <img src="芍药花.jpg" width="100%" height="100%" alt="" >
+            <div class="mask">
+            <h4>芍药花</h4>
+            <p>苟药的花期正好是在母亲节前后，而且芍药具有"五月花神"的美称，
+                芍药花的花语含有富贵和美丽，表达着我们对妈妈永远美丽、高雅的祝福。
+             </p>
+            </div>
+        </li>
+       <li>
+            <img src="康乃馨.jpg"width="100%" height="100%"alt="" >
+            <div class="mask">
+            <h4>康乃馨</h4>
+            <p>康乃馨被誉为母亲之花，它象征着爱，魅力和独特，
+                展示着母爱的温暖与伟大，用来表达深深的母爱和感激之情。
+             </p>
+            </div>
+        </li>
+    </ul>
+    <div style="height: 30px;"></div>
+<ul class="row">
+        <li>
+            <img src="百合花.jpg"width="100%" height="100%"alt="" >
+            <div class="mask">
+            <h4>百合花</h4>
+            <p>百合花象征着女性独立自强的性格。百合花有着百年好合、
+                家庭美满、伟大的爱的含义，母亲节送给妈妈百合花有深深祝福的意义。
+             </p>
+            </div>
+        </li>
+        <li>
+            <img src="萱草花.jpg"width="100%" height="100%"alt="" >
+            <div class="mask">
+            <h4>萱草花</h4>
+            <p>萱草花是中国的母亲花，花朵颜色橙黄色，花柄很长。又被叫做忘忧草，
+                象征着忘掉之前的一切不愉快，祝愿她放下忧愁和烦恼，适合送给母亲。
+             </p>
+            </div>
+        </li>
+        <li>
+            <img src="郁金香.jpg"width="100%" height="100%"alt="" >
+            <div class="mask">
+            <h4>郁金香</h4>
+            <p>母亲节给妈妈送郁金香，表达子女对她强烈的爱、狂热的爱。
+                代表“爱情永恒，祝福永在”，象征着对母亲永远不变的敬爱和感激
+             </p>
+            </div>
+        </li>
+    </ul>
+    <div style="height: 100px;"></div>
+
+    <h1 style="color: #ff0988; padding:10px;border:5px solid #d30a0a;border-radius:  5px;font-size: 50px;"><strong>母亲节赠送的礼物</strong></h1>
+    <div style="height: 20px;"></div>
+    <h2 style="color: #ea4899;" >“母亲节是五月中的一天，而母亲的爱却充盈了岁月，礼物承载着来自孩子的爱意”</h2>
+    <div style="height: 30px;"></div>
+<ul class="low">
+        <li>
+            <div class="img-text-container">
+            <img src="按摩仪.jpg" alt="按摩仪">
+            <h3 style="color: #e40053;font-size: 40px ">按摩仪</h3>
+            <p>按摩器按摩力度适中，按摩器能够精准地按摩到穴位，缓解疲劳，
+                既不会太轻也不会太重刚好可以缓解妈妈们腰部的紧绷感。 每次使用完后，都觉得整个人放松了许多，
+                精神状态也好了很多，而且按摩器设计得很人性化操作简单方便， 妈妈自己就可以轻松掌握。
+                 希望它能为妈妈带去轻松与舒适。
+            </p>
+      </div>
+    </li>
+    <li>
+      <div class="img-text-container">
+        <img src="护肤品.jpg" alt="护肤品">
+        <h3 style="color: #e40053; font-size: 40px">护肤品</h3>
+        <p>母亲节|以爱之名，礼献母小时候，总觉得妈妈是万能的长大后，才知道妈妈曾经也是小女孩只是生活的大乱斗，
+            让她成为了超人她总是想把最好的给我这一次想把最好的送给她守护妈妈们的“美”时“美”刻。
+            护肤品让干燥肌肤重现水润透亮细数年华愿岁月不败美人以爱之名，让时光慢一点，
+            祝愿全世界的妈妈节日快乐是妈妈也是自己柔软且有力量
+        </p>
+      </div>
+    </li>
+    <li>
+      <div class="img-text-container">
+        <img src="首饰.jpg" alt="首饰">
+        <h3 style="color: #e40053; font-size: 40px">首饰</h3>
+        <p>生活需要仪式感 我们总从妈妈那里索取却忘了妈妈也需要惊喜,
+            项链纯银等首饰材质不掉色不过敏满钻blingbling的超闪守护妈妈的少女心，
+            妈妈也可以做精致少女，精美包装给足仪式感作为节日礼物送给妈妈，希望妈妈永远是最闪耀的自己~
+        </p>
+      </div>
+    </li>
+    <li>
+      <div class="img-text-container">
+        <img src="衣服.jpg" alt="衣服">
+        <h3 style="color: #e40053; font-size: 40px">衣服</h3>
+        <p>衣服的每一针每一线,都缝制着对妈妈的感谢和敬意。为妈妈挑选一件精致的服装，
+            让她的优雅与美丽在母亲节这一天得到完美的展现。
+            穿上新衣就是：“今天和往常一样，无时无刻不在爱着您。” 
+            穿上新裙子，一起享受这份温暖。“轻松的款式，舒适的质地，为妈妈准备的。
+            “今天，让妈妈以轻松的姿态享受这一天。”
+         </p>
+      </div>
+    </li>
+</ul>
+  <div style="height: 100px;"></div>
+
+  <h1 style="color: #ff0988; padding:10px;border:5px solid #d30a0a;border-radius:  5px;font-size: 50px;"><strong>母爱电影推荐</strong></h1>
+  <div style="height: 20px;"></div>
+  <h2 style="color: #ea4899;" >“母爱如水，润物无声。时间温柔浪漫万千，不要忘记妈妈的那份”</h2>
+  <div style="height: 20px;"></div>
+  <div class="movie-section"style="background-image: url('母爱背景图.jpg'); background-repeat: no-repeat; 
+             background-size: cover; background-position: center center; ">
+  <div style="height: 30px;"></div>
+    <div class="movie-row" >
+        <img class="movie-poster" src="你好李焕英.jpg" alt="电影1海报">
+        <div class="movie-description">
+            <h3>《你好，李焕英》</h3>
+            <p>《你好，李焕英》是一部讲述母女之间感情的电影。影片中主人公贾晓玲在妈妈去世后，
+                意外穿越到1981年，与年轻时的母亲李焕英相遇。在这段时空里，贾晓玲想要改变母亲的命运，
+                 让母亲过上更好的生活，但最终发现母亲也是穿越而来，并且一直在默默配合和保护自己。
+                电影通过一系列感人的情节展现了母爱的伟大和女儿对母亲的思念之情。
+            </p>
+            <a href="https://www.bilibili.com/video/BV1Nb41197du?t=3.9"target="_blank">精彩剪辑——点击查看详细</a>
+        </div>
+    </div>
+    <div class="movie-row">
+        <img class="movie-poster" src="关于我妈的一切.jpg" alt="电影3海报">
+        <div class="movie-description">
+            <h3>《关于我妈的一切》</h3>
+            <p>《关于我妈的一切》是一部2019年上映的中国电影，影片讲述了一对母女之间的情感纠葛和成长故事。
+                母亲在照顾女儿的同时，也在寻找自我和幸福。影片既温情感人又充满力量，
+                展现了母爱的伟大和女性的坚强。故事情节紧凑，表现细腻，
+                深刻探讨了家庭、亲情和自我认知等主题，是一部感人至深的家庭题材电影。
+            </p>
+                <a href="https://www.bilibili.com/video/BV1tG41167me?t=8.6"target="_blank">精彩剪辑——点击查看详细</a>
+        </div>
+    </div>
+    <div class="movie-row">
+        <img class="movie-poster" src="妈妈.jpg" alt="电影4海报">
+        <div class="movie-description">
+            <h3>《妈妈》</h3>
+            <p>《妈妈》影片讲述了一位单身母亲为了给女儿创造更好的生活而奋斗的故事。
+                母爱和牺牲精神贯穿始终，展现了母女之间深厚的情感纽带。
+                影片情感真挚，感人至深，引人思考家庭、责任和爱的意义。故事情节引人入胜，
+                演员表现出色，是一部充满温情的家庭题材佳作。
+            </p>
+                <a href="https://www.bilibili.com/video/BV1JW4y1j7PM?t=5.6"target="_blank">精彩剪辑——点击查看详细</a>
+        </div>
+    </div>
+    <div class="movie-row">
+        <img class="movie-poster" src="灿烂的她.jpg" alt="电影2海报">
+        <div class="movie-description">
+            <h3>《灿烂的她》</h3>
+            <p>《灿烂的她》讲述了一个关于亲情、友情和爱情的故事。电影中，主角嘉怡在奶奶的关爱与陪伴下，
+                经历了一场心灵的洗礼，奶奶用智慧和坚韧引领嘉怡走出人生的阴霾，重新找到生活的意义和价值。
+            </p>
+            <a href="https://www.bilibili.com/video/BV1Vz421k7Ez?t=90.4"target="_blank">精彩剪辑——点击查看详细</a>
+        </div>
+    </div>
+</body>
+</html>
